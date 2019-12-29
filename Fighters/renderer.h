@@ -8,6 +8,8 @@ class Renderer
 {
 public:
 	Renderer(sf::RenderWindow& window);
+	void appendToDrawList(sf::Drawable& drawable);
+	void appendToDrawList(std::vector<sf::Drawable*>& drawables);
 	void setDrawList(std::vector<sf::Drawable*>& drawList);
 	void clearDrawList();
 	void render();

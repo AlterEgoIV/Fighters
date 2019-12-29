@@ -55,7 +55,7 @@ void FighterInputDriver::update(double deltaTime)
 
 		if(Input::isKeyDown(sf::Keyboard::M))
 		{
-			
+			fighter.attack();
 		}
 	}
 }

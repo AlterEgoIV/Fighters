@@ -136,34 +136,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="attack.cpp" />
+    <ClCompile Include="fighterattack.cpp" />
     <ClCompile Include="collider.cpp" />
     <ClCompile Include="driver.cpp" />
     <ClCompile Include="factory.cpp" />
     <ClCompile Include="fighter.cpp" />
     <ClCompile Include="fighteraidriver.cpp" />
     <ClCompile Include="fighterinputdriver.cpp" />
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="gameobject.cpp" />
     <ClCompile Include="input.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="meleeattack.cpp" />
     <ClCompile Include="renderer.cpp" />
     <ClCompile Include="vector2.cpp" />
+    <ClCompile Include="world.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="attack.h" />
-    <ClInclude Include="attackname.h" />
+    <ClInclude Include="fighterattack.h" />
+    <ClInclude Include="attacktype.h" />
     <ClInclude Include="collider.h" />
     <ClInclude Include="driver.h" />
     <ClInclude Include="factory.h" />
     <ClInclude Include="fighter.h" />
     <ClInclude Include="fighteraidriver.h" />
     <ClInclude Include="fighterinputdriver.h" />
+    <ClInclude Include="game.h" />
     <ClInclude Include="gameobject.h" />
     <ClInclude Include="input.h" />
-    <ClInclude Include="meleeattack.h" />
+    <ClInclude Include="objecttype.h" />
     <ClInclude Include="renderer.h" />
     <ClInclude Include="vector2.h" />
+    <ClInclude Include="world.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

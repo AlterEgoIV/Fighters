@@ -7,7 +7,7 @@
 class Factory
 {
 public:
-	static std::shared_ptr<Fighter> createPlayerFighter(Vector2 position, Vector2 size, double speed);
-	static std::shared_ptr<Fighter> createAIFighter(Vector2 position, Vector2 size, double speed, Fighter& target);
+	static std::shared_ptr<Fighter> createPlayerFighter(World& world, Vector2 position, Vector2 size, double speed);
+	static std::shared_ptr<Fighter> createAIFighter(World& world, Vector2 position, Vector2 size, double speed, Fighter& target);
 };
 

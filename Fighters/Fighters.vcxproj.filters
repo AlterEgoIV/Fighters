@@ -1,99 +1,128 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="gameobjects">
+      <UniqueIdentifier>{17326ff7-15ee-4f2b-a57d-794526f477db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers">
+      <UniqueIdentifier>{76ff2dac-3f2a-4d1f-be5c-ca40b0836c02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maths">
+      <UniqueIdentifier>{d63ae40f-1530-450b-83e0-7a2023df6402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="physics">
+      <UniqueIdentifier>{dfddb59d-ceb5-41b6-bbde-38f81b2f91c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rendering">
+      <UniqueIdentifier>{96c13f6d-b31a-4c65-ad9c-84a40dbcba52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{da0e4a79-cc4a-4807-ad1a-80da2ac27771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="factories">
+      <UniqueIdentifier>{960a5780-9c7c-4f48-9833-4afc0d6a588a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="enums">
+      <UniqueIdentifier>{79e96bed-a41d-4587-94ca-c7dfa67a3004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="worlds">
+      <UniqueIdentifier>{15d369b9-6980-408e-b8d2-d3c037b46872}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{c04ba3a7-4573-4910-bcee-108e0a074a93}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="fighter.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>gameobjects</Filter>
     </ClCompile>
     <ClCompile Include="gameobject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="vector2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="input.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>gameobjects</Filter>
     </ClCompile>
     <ClCompile Include="driver.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="fighterinputdriver.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>drivers</Filter>
     </ClCompile>
     <ClCompile Include="fighteraidriver.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>drivers</Filter>
     </ClCompile>
-    <ClCompile Include="factory.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="fighterinputdriver.cpp">
+      <Filter>drivers</Filter>
     </ClCompile>
-    <ClCompile Include="renderer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="vector2.cpp">
+      <Filter>maths</Filter>
     </ClCompile>
     <ClCompile Include="collider.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>physics</Filter>
     </ClCompile>
-    <ClCompile Include="attack.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="renderer.cpp">
+      <Filter>rendering</Filter>
     </ClCompile>
-    <ClCompile Include="meleeattack.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="input.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="factory.cpp">
+      <Filter>factories</Filter>
+    </ClCompile>
+    <ClCompile Include="world.cpp">
+      <Filter>worlds</Filter>
+    </ClCompile>
+    <ClCompile Include="fighterattack.cpp">
+      <Filter>gameobjects</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="vector2.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="fighter.h">
+      <Filter>gameobjects</Filter>
     </ClInclude>
     <ClInclude Include="gameobject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="fighter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="input.h">
-      <Filter>Header Files</Filter>
+      <Filter>gameobjects</Filter>
     </ClInclude>
     <ClInclude Include="driver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="fighterinputdriver.h">
-      <Filter>Header Files</Filter>
+      <Filter>drivers</Filter>
     </ClInclude>
     <ClInclude Include="fighteraidriver.h">
-      <Filter>Header Files</Filter>
+      <Filter>drivers</Filter>
     </ClInclude>
-    <ClInclude Include="factory.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="fighterinputdriver.h">
+      <Filter>drivers</Filter>
     </ClInclude>
-    <ClInclude Include="renderer.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="vector2.h">
+      <Filter>maths</Filter>
     </ClInclude>
     <ClInclude Include="collider.h">
-      <Filter>Header Files</Filter>
+      <Filter>physics</Filter>
     </ClInclude>
-    <ClInclude Include="attack.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="renderer.h">
+      <Filter>rendering</Filter>
     </ClInclude>
-    <ClInclude Include="attackname.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="input.h">
+      <Filter>input</Filter>
     </ClInclude>
-    <ClInclude Include="meleeattack.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="factory.h">
+      <Filter>factories</Filter>
+    </ClInclude>
+    <ClInclude Include="world.h">
+      <Filter>worlds</Filter>
+    </ClInclude>
+    <ClInclude Include="fighterattack.h">
+      <Filter>gameobjects</Filter>
+    </ClInclude>
+    <ClInclude Include="attacktype.h">
+      <Filter>enums</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="objecttype.h">
+      <Filter>enums</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

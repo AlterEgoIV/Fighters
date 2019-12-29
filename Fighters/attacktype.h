@@ -1,6 +1,6 @@
 #pragma once
 
-enum class AttackName
+enum class AttackType
 {
 	MELEE
 };
