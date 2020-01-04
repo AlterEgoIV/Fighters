@@ -5,10 +5,10 @@
 
 Fighter::Fighter(World& world, Vector2 position, Vector2 size, double speed)
 	:	GameObject{world, position, size, std::make_shared<sf::RectangleShape>(size)},
-		bodyCollider{position, size},
+		/*bodyCollider{position, size},*/
 		speed{speed}, 
-		attackDirection{Vector2(1, 0)},
-		attackCollider{Vector2::add(position, Vector2::multiply(attackDirection, size)), size}
+		attackDirection{Vector2(1, 0)}
+		/*attackCollider{Vector2::add(position, Vector2::multiply(attackDirection, size)), size}*/
 {
 	/*bodyCollider.shape.setFillColor(sf::Color::Transparent);
 	bodyCollider.shape.setOutlineColor(sf::Color::Cyan);
@@ -38,6 +38,7 @@ void Fighter::update(double deltaTime)
 
 	//bodyCollider.shape.setPosition(position);
 	shape->setPosition(position);
+	collider.shape.setPosition(position);
 
 	//std::cout << "Shape position: " << shape->getPosition().x << " " << shape->getPosition().y << "\n";
 }

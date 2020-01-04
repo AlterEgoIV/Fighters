@@ -6,6 +6,25 @@ Collider::Collider(Vector2 position, Vector2 size, bool isActive) : shape{size},
 	shape.setPosition(position);
 }
 
+bool Collider::collidesWith(Collider& collider)
+{
+	return shape.getGlobalBounds().intersects(collider.shape.getGlobalBounds());
+	/*sf::FloatRect bounds1 = shape.getGlobalBounds();
+	sf::FloatRect bounds2 = collider.shape.getGlobalBounds();
+
+	if(bounds1.intersects(bounds2)) return true;
+
+	return false;*/
+}
+
+Vector2 Collider::getIntersection(Collider& collider)
+{
+	sf::FloatRect intersection;
+	shape.getGlobalBounds().intersects(collider.shape.getGlobalBounds(), intersection);
+
+	return Vector2(intersection.width, intersection.height);
+}
+
 void Collider::set(double positionX, double positionY, double width, double height)
 {
 	shape.setSize(Vector2(width, height));

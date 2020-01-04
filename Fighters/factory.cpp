@@ -14,6 +14,7 @@ std::shared_ptr<Fighter> Factory::createAIFighter(World& world, Vector2 position
 {
 	std::shared_ptr<Fighter> fighter = std::make_shared<Fighter>(world, position, size, speed);
 	fighter->driver = std::make_unique<FighterAIDriver>(*fighter, target);
+	//fighter->driver->isActive = false;
 
 	return fighter;
 }

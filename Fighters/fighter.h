@@ -12,10 +12,10 @@ class Fighter : public GameObject
 {
 public:
 	Vector2 attackDirection;
-	Collider bodyCollider, attackCollider;
+	//Collider bodyCollider, attackCollider;
 	double speed;
-	std::map<AttackType, std::shared_ptr<FighterAttack>> attacks;
-	std::vector<FighterAttack*> activeAttacks;
+	//std::map<AttackType, std::shared_ptr<FighterAttack>> attacks;
+	//std::vector<FighterAttack*> activeAttacks;
 	std::unique_ptr<Driver> driver;
 	AttackType currentAttack;
 
