@@ -4,8 +4,9 @@
 #include <vector>
 
 #include "renderer.h"
+#include "collisionhandler.h"
 
-class GameObject;
+//class GameObject;
 class FighterAttack;
 class Fighter;
 
@@ -19,6 +20,7 @@ private:
 	std::vector<std::shared_ptr<GameObject>> gameObjectsToAdd;
 	std::vector<std::shared_ptr<FighterAttack>> fighterAttackPool;
 	Renderer& renderer;
+	CollisionHandler collisionHandler;
 
 public:
 	World(Renderer& renderer);

@@ -18,10 +18,11 @@ FighterAttack::FighterAttack(World& world, Fighter& fighter)
 	shape->setPosition(position);
 
 	direction = fighter.attackDirection;
+	//direction.set(fighter.attackDirection.x, fighter.attackDirection.y);
 }
 
 void FighterAttack::update(double deltaTime)
 {
-	position.add(Vector2::scale(direction, 100 * deltaTime));
+	position.add(Vector2::scale(direction, speed * deltaTime));
 	shape->setPosition(position);
 }

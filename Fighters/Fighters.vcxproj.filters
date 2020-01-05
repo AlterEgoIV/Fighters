@@ -77,6 +77,9 @@
     <ClCompile Include="game.cpp">
       <Filter>game</Filter>
     </ClCompile>
+    <ClCompile Include="collisionhandler.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fighter.h">
@@ -123,6 +126,9 @@
     </ClInclude>
     <ClInclude Include="objecttype.h">
       <Filter>enums</Filter>
+    </ClInclude>
+    <ClInclude Include="collisionhandler.h">
+      <Filter>physics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
