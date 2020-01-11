@@ -1,6 +1,7 @@
 #include "collider.h"
 
-Collider::Collider(Vector2 position, Vector2 size, bool isActive) : shape{size}, isActive{isActive}
+Collider::Collider(Vector2 position, Vector2 size, bool isActive, bool isMovable, int repulsionForce) 
+	: shape{size}, isActive{isActive}, isMovable{isMovable}, repulsionForce{repulsionForce}
 {
 	shape.setOrigin(shape.getSize().x / 2, shape.getSize().y / 2);
 	shape.setPosition(position);

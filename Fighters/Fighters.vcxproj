@@ -137,6 +137,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="collisionhandler.cpp" />
+    <ClCompile Include="commandable.cpp" />
     <ClCompile Include="fighterattack.cpp" />
     <ClCompile Include="collider.cpp" />
     <ClCompile Include="driver.cpp" />
@@ -154,6 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="collisionhandler.h" />
+    <ClInclude Include="commandable.h" />
     <ClInclude Include="fighterattack.h" />
     <ClInclude Include="attacktype.h" />
     <ClInclude Include="collider.h" />

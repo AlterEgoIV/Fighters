@@ -19,8 +19,8 @@ void CollisionHandler::handleCollisions(std::vector<std::shared_ptr<GameObject>>
 
 			if(collider1.collidesWith(collider2))
 			{
-				handleGameObjectCollisions(gameObject1, gameObject2);
 				handleGeometryCollisions(gameObject1, gameObject2, collider1, collider2);
+				handleGameObjectCollisions(gameObject1, gameObject2);
 			}
 		}
 	}

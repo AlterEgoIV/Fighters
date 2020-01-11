@@ -1,11 +1,12 @@
 #pragma once
 
+#include "commandable.h"
 #include "vector2.h"
 #include "objecttype.h"
 #include "world.h"
 #include "collider.h"
 
-class GameObject
+class GameObject : public Commandable
 {
 public:
 	Vector2 position, size, direction;

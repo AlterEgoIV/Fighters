@@ -6,9 +6,10 @@
 class Collider
 {
 public:
-	Collider(Vector2 position, Vector2 size, bool isActive = true);
+	Collider(Vector2 position, Vector2 size, bool isActive = true, bool isMovable = true, int repulsionForce = 1);
 	sf::RectangleShape shape;
-	bool isActive;
+	bool isActive, isMovable;
+	int repulsionForce;
 
 	bool collidesWith(Collider& collider);
 	Vector2 getIntersection(Collider& collider);

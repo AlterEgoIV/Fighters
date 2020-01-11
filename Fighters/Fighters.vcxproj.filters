@@ -80,6 +80,7 @@
     <ClCompile Include="collisionhandler.cpp">
       <Filter>physics</Filter>
     </ClCompile>
+    <ClCompile Include="commandable.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fighter.h">
@@ -130,5 +131,6 @@
     <ClInclude Include="collisionhandler.h">
       <Filter>physics</Filter>
     </ClInclude>
+    <ClInclude Include="commandable.h" />
   </ItemGroup>
 </Project>
