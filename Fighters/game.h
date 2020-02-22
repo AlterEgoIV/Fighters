@@ -4,6 +4,10 @@
 
 #include "renderer.h"
 #include "world.h"
+//#include "gamestate.h"
+#include "statename.h"
+
+class GameState;
 
 class Game
 {
@@ -11,10 +15,11 @@ public:
 	Game();
 	void run();
 
+	std::map<StateName, std::shared_ptr<GameState>> gameStates;
+	std::shared_ptr<GameState> currentState;
 	sf::RenderWindow window;
 	Renderer renderer;
 	sf::Clock clock;
-	World world;
 
 private:
 	void processEvents();

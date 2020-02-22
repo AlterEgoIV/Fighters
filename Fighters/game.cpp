@@ -2,10 +2,18 @@
 #include "input.h"
 
 #include <iostream>
+#include "gamestate.h"
+#include "playgamestate.h"
+#include "mainmenugamestate.h"
 
-Game::Game() : window(sf::VideoMode(800, 600), "Fighters"), renderer(window), world(renderer)
+Game::Game() : window(sf::VideoMode(800, 600), "Fighters"), renderer(window)
 {
 	window.setKeyRepeatEnabled(false);
+
+	gameStates.emplace(StateName::MAINMENU_STATE, std::make_shared<MainMenuGameState>(*this));
+	gameStates.emplace(StateName::PLAY_STATE, std::make_shared<PlayGameState>(*this));
+
+	currentState = gameStates[StateName::PLAY_STATE];
 }
 
 void Game::run()
@@ -16,7 +24,7 @@ void Game::run()
 
 		processEvents();
 
-		world.update(deltaTime);
+		currentState->update(deltaTime);
 
 		renderer.render();
 		renderer.clearDrawList();

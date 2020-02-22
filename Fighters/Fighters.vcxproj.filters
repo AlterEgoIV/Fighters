@@ -35,6 +35,15 @@
     <Filter Include="game">
       <UniqueIdentifier>{c04ba3a7-4573-4910-bcee-108e0a074a93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="commands">
+      <UniqueIdentifier>{370d58fe-ea4b-407c-b301-29201547c820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="states">
+      <UniqueIdentifier>{a29a5157-fb29-47a7-9619-c2b69eb89baa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="states\gamestates">
+      <UniqueIdentifier>{93969eda-a5b4-4f51-92a9-e5ed5a51cc6c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="fighter.cpp">
@@ -80,7 +89,24 @@
     <ClCompile Include="collisionhandler.cpp">
       <Filter>physics</Filter>
     </ClCompile>
-    <ClCompile Include="commandable.cpp" />
+    <ClCompile Include="commandable.cpp">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="command.cpp">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="inputhandler.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="gamestate.cpp">
+      <Filter>states\gamestates</Filter>
+    </ClCompile>
+    <ClCompile Include="playgamestate.cpp">
+      <Filter>states\gamestates</Filter>
+    </ClCompile>
+    <ClCompile Include="mainmenugamestate.cpp">
+      <Filter>states\gamestates</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fighter.h">
@@ -131,6 +157,26 @@
     <ClInclude Include="collisionhandler.h">
       <Filter>physics</Filter>
     </ClInclude>
-    <ClInclude Include="commandable.h" />
+    <ClInclude Include="commandable.h">
+      <Filter>commands</Filter>
+    </ClInclude>
+    <ClInclude Include="command.h">
+      <Filter>commands</Filter>
+    </ClInclude>
+    <ClInclude Include="inputhandler.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="gamestate.h">
+      <Filter>states\gamestates</Filter>
+    </ClInclude>
+    <ClInclude Include="playgamestate.h">
+      <Filter>states\gamestates</Filter>
+    </ClInclude>
+    <ClInclude Include="statename.h">
+      <Filter>enums</Filter>
+    </ClInclude>
+    <ClInclude Include="mainmenugamestate.h">
+      <Filter>states\gamestates</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

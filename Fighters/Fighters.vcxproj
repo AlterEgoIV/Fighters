@@ -137,6 +137,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="collisionhandler.cpp" />
+    <ClCompile Include="command.cpp" />
     <ClCompile Include="commandable.cpp" />
     <ClCompile Include="fighterattack.cpp" />
     <ClCompile Include="collider.cpp" />
@@ -147,14 +148,19 @@
     <ClCompile Include="fighterinputdriver.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="gameobject.cpp" />
+    <ClCompile Include="gamestate.cpp" />
     <ClCompile Include="input.cpp" />
+    <ClCompile Include="inputhandler.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainmenugamestate.cpp" />
+    <ClCompile Include="playgamestate.cpp" />
     <ClCompile Include="renderer.cpp" />
     <ClCompile Include="vector2.cpp" />
     <ClCompile Include="world.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="collisionhandler.h" />
+    <ClInclude Include="command.h" />
     <ClInclude Include="commandable.h" />
     <ClInclude Include="fighterattack.h" />
     <ClInclude Include="attacktype.h" />
@@ -166,9 +172,14 @@
     <ClInclude Include="fighterinputdriver.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="gameobject.h" />
+    <ClInclude Include="gamestate.h" />
     <ClInclude Include="input.h" />
+    <ClInclude Include="inputhandler.h" />
+    <ClInclude Include="mainmenugamestate.h" />
     <ClInclude Include="objecttype.h" />
+    <ClInclude Include="playgamestate.h" />
     <ClInclude Include="renderer.h" />
+    <ClInclude Include="statename.h" />
     <ClInclude Include="vector2.h" />
     <ClInclude Include="world.h" />
   </ItemGroup>
